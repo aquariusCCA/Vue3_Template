@@ -1,4 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted } from 'vue'
+onMounted(() => {
+  console.log('mounted: ', import.meta.env)
+  console.log('mounted: ', import.meta.env.VITE_TITLE)
+})
+</script>
 
 <template>
   <div
