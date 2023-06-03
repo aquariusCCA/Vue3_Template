@@ -27,6 +27,7 @@ module.exports = {
         ignorePseudoClasses: ["global", "export", "v-deep", "deep"],
       },
     ],
+		'function-url-quotes': 'always', 
 		'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': [
         true,
