@@ -10,17 +10,26 @@
 		"lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
 		"format": "prettier --write \".{html,vue,ts,js,json,md}\"",
 		"lint:stylelint": "stylelint  \"**/*.{css,scss,vue,html}\" --fix",
-		"prepare": "husky install" ,
-		"lint-staged": "lint-staged"
+		"prepare": "husky install",
+		"lint-staged": "lint-staged",
+		"commitlint": "commitlint --config commitlint.config.cjs -e -V"
 	},
 	"lint-staged": {
-    "src/**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,json}": ["eslint --fix", "prettier --write"],
-    "src/**/*.{css,scss}": ["prettier --write", "stylelint --fix"]
-  },
+		"src/**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,json}": [
+			"eslint --fix",
+			"prettier --write"
+		],
+		"src/**/*.{css,scss}": [
+			"prettier --write",
+			"stylelint --fix"
+		]
+	},
 	"dependencies": {
 		"vue": "^3.2.47"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^17.6.5",
+		"@commitlint/config-conventional": "^17.6.5",
 		"@typescript-eslint/eslint-plugin": "^5.59.8",
 		"@typescript-eslint/parser": "^5.59.8",
 		"@vitejs/plugin-vue": "^4.1.0",
