@@ -31,3 +31,9 @@
     </div>
   </div>
 </template>
+
+<style scoped lang="scss">
+div {
+  background-color: $bgColor;
+}
+</style>
