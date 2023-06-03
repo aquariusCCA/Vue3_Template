@@ -22,6 +22,19 @@ export default defineConfig(({ command, mode }) => {
           additionalData: '@import "/src/assets/style/variable.scss";'
         }
       }
+    },
+    // 代理跨域配置
+    server: {
+      proxy: {
+        '/api': {
+          // 獲取數據的服務器地址設置
+          target: 'http://139.198.104.58:8209',
+          // 開啟代理，需要跨域。
+          changeOrigin: true,
+          // 路徑重寫
+          rewrite: (path) => path.replace(/^\/api/, '')
+        }
+      }
     }
   }
 })

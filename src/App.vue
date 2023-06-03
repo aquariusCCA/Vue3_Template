@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
+import axios from 'axios'
+
 onMounted(() => {
-  console.log('mounted: ', import.meta.env)
-  console.log('mounted: ', import.meta.env.VITE_TITLE)
+  console.log('mounted')
+
+  axios.get('/api/admin/product/test/read').then((res) => {
+    console.log(res)
+  })
 })
 </script>
 
