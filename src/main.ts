@@ -16,6 +16,9 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 // 引入 Router
 import router from './router/index.js'
 
+// 引入樣式
+import './assets/style/index.scss'
+
 const app = createApp(App)
 
 app.use(ElementPlus, {

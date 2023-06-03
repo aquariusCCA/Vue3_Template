@@ -1,36 +1,33 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div
+    class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+  >
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">
+        <img
+          class="h-48 w-full object-cover md:h-full md:w-48"
+          src="/img/store.jpg"
+          alt="Man looking at item at a store"
+        />
+      </div>
+      <div class="p-8">
+        <div
+          class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
+        >
+          Case study
+        </div>
+        <a
+          href="#"
+          class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+          >Finding customers for your new business</a
+        >
+        <p class="mt-2 text-gray-500">
+          Getting a new business off the ground is a lot of hard work. Here are
+          five ideas you can use to find your first customers.
+        </p>
+      </div>
+    </div>
   </div>
-  <!-- // to="/home" 这个地址就是index.js中的path -->
-  <router-link to="/home">Home</router-link>
-  <!-- // 必须要加,不然Home.vue的内容无法显示 -->
-  <router-view></router-view>
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>

@@ -27,6 +27,13 @@ module.exports = {
         ignorePseudoClasses: ["global", "export", "v-deep", "deep"],
       },
     ],
+		'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': [
+        true,
+        {
+            'ignoreAtRules': ['tailwind']
+        }
+    ]
   },
 };
 
