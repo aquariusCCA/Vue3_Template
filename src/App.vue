@@ -11,7 +11,11 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- // to="/home" 这个地址就是index.js中的path -->
+  <router-link to="/home">Home</router-link>
+  <!-- // 必须要加,不然Home.vue的内容无法显示 -->
+  <router-view></router-view>
+  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
 <style scoped>

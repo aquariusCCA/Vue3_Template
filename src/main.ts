@@ -13,11 +13,15 @@ import { createPinia } from 'pinia'
 // 引入 pinia-plugin-persistedstate
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
+// 引入 Router
+import router from './router/index.js'
+
 const app = createApp(App)
 
 app.use(ElementPlus, {
   locale: zhTw
 })
 app.use(createPinia().use(piniaPluginPersistedstate))
+app.use(router)
 
 app.mount('#app')
