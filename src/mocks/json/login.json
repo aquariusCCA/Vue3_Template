@@ -1,0 +1,64 @@
+{
+  "userDetail": {
+    "accountNonExpired": true,
+    "accountNonLocked": true,
+    "authPolicy": "YYYYY",
+    "authorities": [
+      {
+        "authority": "NotifyUser"
+      }
+    ],
+    "credentialsNonExpired": true,
+    "enabled": true,
+    "roles": ["NotifyUser"],
+    "userId": "A121004312",
+    "userInfo": {
+      "admin_num": "0005052",
+      "adminname": "李＊＊",
+      "adminworkun3": "AK",
+      "adminworkunna2": "城中分公司",
+      "adminworkunna3": "營業一部",
+      "agent_id": "LB1002740",
+      "agent_name": "李＊＊",
+      "agentbirth": "19880203",
+      "agentworkun2": "WWWWW",
+      "agentworkun3": "Y17600000",
+      "agentworkunna2": "ＴＰＵ０４北四區部",
+      "agentworkunna3": "富有通訊處",
+      "applyflag": "2",
+      "email": "rita@i-mps.com",
+      "id": "A121004312",
+      "identity": "0",
+      "sales_id": "A05D073462",
+      "signed": true,
+      "tested": true,
+      "unionNum": "FBlife-Y1760"
+    },
+    "userInfoParam": "EMP_NO,test_mail_003,EMAIL,test_mail_003@life.fubon.com,ID,A121004312,EMP_TYPE,03,COM_ID,LTW,DEP_ID,Y1760",
+    "username": "A121004312",
+    "xrefInfo": [
+      {
+        "admin": "0005052",
+        "adminSeq": "FHI",
+        "ascCrzSale": "P220181458",
+        "channel": "20",
+        "empcname": "統＊＊中",
+        "isctype": "3",
+        "licempcname": "李＊＊",
+        "regno": "P05G359782",
+        "xref": "000IX25N1"
+      },
+      {
+        "admin": "0005052",
+        "adminSeq": "FJK",
+        "ascCrzSale": "P220181458",
+        "channel": "20",
+        "empcname": "統＊＊平",
+        "isctype": "3",
+        "licempcname": "李＊＊",
+        "regno": "P05G359782",
+        "xref": "000IX25N3"
+      }
+    ]
+  }
+}

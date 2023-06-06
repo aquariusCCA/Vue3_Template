@@ -26,9 +26,9 @@ export default defineConfig(({ command, mode }) => {
     // 代理跨域配置
     server: {
       proxy: {
-        '/api': {
+        [env.VITE_BASE_API]: {
           // 獲取數據的服務器地址設置
-          target: 'http://139.198.104.58:8209',
+          target: env.VITE_GENERAL_API_URL,
           // 開啟代理，需要跨域。
           changeOrigin: true,
           // 路徑重寫
